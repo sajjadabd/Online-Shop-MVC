@@ -1,0 +1,28 @@
+[22-Aug-2019 16:25:33 Asia/Tehran] PHP Warning:  file_get_contents(https://api.telegram.org/bot720561721:AAFyzli3mQw3XohRsWsp4ti2YCbK9oa7mHQ/sendMessage?chat_id=255993989&amp;text=Hi+Everyone): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/nekabeau/public_html/php/telegram/search.php on line 58
+[22-Aug-2019 16:26:37 Asia/Tehran] PHP Warning:  file_get_contents(https://api.telegram.org/bot720561721:AAFyzli3mQw3XohRsWsp4ti2YCbK9oa7mHQ/sendMessage?chat_id=255993989&amp;text=Hi+Everyone): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/nekabeau/public_html/php/telegram/search.php on line 53
+[22-Aug-2019 16:26:55 Asia/Tehran] PHP Warning:  file_get_contents(https://api.telegram.org/bot720561721:AAFyzli3mQw3XohRsWsp4ti2YCbK9oa7mHQ/sendMessage?chat_id=255993989&amp;text=Hi+Everyone): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/nekabeau/public_html/php/telegram/search.php on line 48
+[22-Aug-2019 16:28:07 Asia/Tehran] PHP Warning:  file_get_contents(https://api.telegram.org/bot720561721:AAFyzli3mQw3XohRsWsp4ti2YCbK9oa7mHQ/sendMessage?): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/nekabeau/public_html/php/telegram/search.php on line 49
+[22-Aug-2019 16:29:00 Asia/Tehran] PHP Warning:  file_get_contents(https://api.telegram.org/bot720561721:AAFyzli3mQw3XohRsWsp4ti2YCbK9oa7mHQ/sendMessage?): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/nekabeau/public_html/php/telegram/search.php on line 48
+[22-Aug-2019 16:29:41 Asia/Tehran] PHP Warning:  file_get_contents(https://api.telegram.org/bot720561721:AAFyzli3mQw3XohRsWsp4ti2YCbK9oa7mHQ/sendMessage?): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/nekabeau/public_html/php/telegram/search.php on line 56
+[22-Aug-2019 16:30:34 Asia/Tehran] PHP Warning:  file_get_contents(https://api.telegram.org/bot720561721:AAFyzli3mQw3XohRsWsp4ti2YCbK9oa7mHQ/sendMessage?): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/nekabeau/public_html/php/telegram/search.php on line 56
+[22-Aug-2019 16:33:04 Asia/Tehran] PHP Warning:  file_get_contents(https://api.telegram.org/bot720561721:AAFyzli3mQw3XohRsWsp4ti2YCbK9oa7mHQ/sendMessage?): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/nekabeau/public_html/php/telegram/search.php on line 56
+[22-Aug-2019 16:34:29 Asia/Tehran] PHP Warning:  file_get_contents(https://api.telegram.org/bot720561721:AAFyzli3mQw3XohRsWsp4ti2YCbK9oa7mHQ/sendMessage?): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/nekabeau/public_html/php/telegram/search.php on line 58
+[22-Aug-2019 16:35:50 Asia/Tehran] PHP Warning:  stream_get_contents() expects parameter 1 to be resource, string given in /home/nekabeau/public_html/php/telegram/search.php on line 29
+[22-Aug-2019 16:35:50 Asia/Tehran] PHP Warning:  stream_get_contents() expects parameter 1 to be resource, string given in /home/nekabeau/public_html/php/telegram/search.php on line 58
+[22-Aug-2019 16:36:15 Asia/Tehran] PHP Warning:  file_get_contents(https://api.telegram.org/bot720561721:AAFyzli3mQw3XohRsWsp4ti2YCbK9oa7mHQ/sendMessage?): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/nekabeau/public_html/php/telegram/search.php on line 58
+[22-Aug-2019 16:36:44 Asia/Tehran] PHP Warning:  file_get_contents(https://api.telegram.org/bot720561721:AAFyzli3mQw3XohRsWsp4ti2YCbK9oa7mHQ/sendMessage?): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/nekabeau/public_html/php/telegram/search.php on line 58
+[22-Aug-2019 16:37:11 Asia/Tehran] PHP Warning:  file_get_contents(https://api.telegram.org/bot720561721:AAFyzli3mQw3XohRsWsp4ti2YCbK9oa7mHQ/sendMessage?): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/nekabeau/public_html/php/telegram/search.php on line 58
+[22-Aug-2019 16:37:57 Asia/Tehran] PHP Warning:  file_get_contents(https://api.telegram.org/bot720561721:AAFyzli3mQw3XohRsWsp4ti2YCbK9oa7mHQ/sendMessage?): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found
+ in /home/nekabeau/public_html/php/telegram/search.php on line 58

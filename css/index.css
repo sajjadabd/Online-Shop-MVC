@@ -1,0 +1,507 @@
+body {
+    margin : 0;
+	padding : 0;
+	overflow-x : hidden;
+	background: url('images/fancy_deboss.png') repeat top left;
+}
+
+
+div.header {
+    width : 100%;
+    position : absolute;
+    height : 50px;
+    background-color: rgba(236, 64, 122,1.0);
+	z-index : 3;
+	top : 0;
+}
+
+div.footer{
+	bottom : 0;
+	margin : 0;
+	padding : 0;
+
+}
+
+div.footer svg{
+	margin : 0;
+}
+
+div.fontFarsi{
+	font-family : nazanin;
+}
+
+div.fontFarsi a{
+	text-decoration: underline;
+}
+
+div.fontFarsi a:hover{
+	color : Tomato;
+}
+
+div#bars{
+	cursor : pointer;
+	position : absolute;
+	right : 20px;
+}
+
+
+div.bars
+{
+    font-size : 1em;
+    padding : 1em;
+	display: flex;
+	flex-direction : row;
+    justify-content: space-between;
+    align-self: center;
+    align-content: center;
+    height : 100px;
+	margin-bottom : 20px;
+	
+}
+
+div.bars *{
+	z-index : 5;
+}
+
+
+div.bars div
+{
+    font-family: nazanin;
+	font-weight : 800;
+}
+
+div.bars div span{
+	padding-right : 20px;
+}
+
+div.bars div#categoryShow{
+	background-color : white;
+	text-align : center;
+	border-radius : 20px;
+}
+
+/* div.bars div
+{
+    display : block;
+} */
+
+div.bars input{
+	margin : 0;
+	padding : 15px 20px;
+	padding-left : 40px;
+    font-size : 20px;
+	width : 50%;
+	height: 20px;
+	border : none;
+	outline : none;
+	font-family : nazanin;
+}
+
+div.bars input:focus{
+	border : none;
+	/* border : 2px solid rgba(236, 64, 122,.9);
+    box-shadow: 0 0 5px rgba(236, 64, 122,.9); */
+}
+
+div.searchBoxContainer{
+	display : flex;
+	position : relative;
+	overflow : visible;
+	width : 80%;
+}
+
+
+div.searchBoxContainer i.fa-search{
+	position : absolute;
+	color : gray;
+	left : 15px;
+	top : 17px;
+}
+
+div.basket_near_search{
+	height : max-content;
+}
+
+div.basket_near_search a{
+	position : relative;
+	left : 15px;
+	top : 8px;
+}
+
+
+@media only screen and (max-width: 540px) {
+
+
+	div.bars input{
+		position : static;
+		width : 70%;
+		padding-left : 60px;
+		
+		border : 2px solid gray;
+	}
+
+	div.bars input:focus{
+		border : 2px solid black;
+	}
+
+	div#bars{
+		position : static;
+	}
+
+	div.bars{
+		flex-direction : column-reverse;
+		justify-content: flex-end;
+		
+	}
+
+	div.bars > div{
+		align-self : flex-end;
+		margin-bottom : 20px;
+	}
+
+	div.bars div.searchBoxContainer{
+		width : 80%;
+		align-self : flex-start;
+	}
+}
+
+
+
+
+h1 {
+    margin : 0;
+    padding: 10px 10px;
+    display : inline-block;
+    font-size: 20px;
+	font-family : logoFont;
+	color : white;
+}
+
+div#mainContent {
+	display : flex;
+	flex-direction : column;
+	margin-top : 30px;
+	position : relative;
+}
+
+div.content {
+	box-sizing : border-box;
+	/*border : 1px solid black;*/
+    margin : 0px 20px;
+    width : 95%;
+    display : flex;
+    /*flex-wrap: wrap;*/
+    justify-content: center;
+    align-items: center;
+}
+
+div#content {
+	box-sizing : border-box;
+    display : flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+	margin-bottom : 100px;
+}
+
+
+
+span#basket {
+    position : relative;
+}
+
+span#userConf {
+    position: relative;
+}
+
+span.userConfigurationRemain {
+    font-family: digit;
+    color : black;
+    background-color: greenyellow;
+    padding : 2px 5px;
+    border-radius: 15%;
+    position : absolute;
+    right : -6px;
+    top : -6px;
+	/*font-size : 30px;*/
+}
+
+i.tooltip span.basketNotificationButton {
+    font-family: digit;
+    color : black;
+    background-color: greenyellow;
+    padding : 2px 5px;
+    border-radius: 15%;
+    position : absolute;
+    right : -10px;
+    top : -12px;
+	/*font-size : 30px;*/
+}
+
+i.tooltipNearSearchbar span.basketNotificationButton {
+    font-family: digit;
+    color : black;
+    background-color: greenyellow;
+    padding : 2px 4px;
+    border-radius: 15%;
+    position : absolute;
+    right : -10px;
+    top : -12px;
+	font-size : 20px;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+
+	span.userConfigurationRemain {
+		/*right : -10px;*/
+		/*top : -12px;*/
+		font-size : 14px;
+	}
+
+	span.basketNotificationButton {
+		right : -10px;
+		top : -12px;
+		font-size : 14px;
+	}
+}
+
+textarea {
+	width : 70%;
+}
+
+span.multiply_number{
+	background-color : greenyellow;
+	border-radius : 5px;
+	padding : 2px 4px;
+}
+
+i.fa-minus-square{
+	color : rgba(255, 0, 255, 0.5);
+}
+
+i.fa-minus-square:hover{
+    color : rgba(255, 0, 255, 0.8);
+}
+
+i.fa-minus-square:active{
+    color : rgba(255, 0, 255, 1);
+}
+
+i.fa-plus-square{
+	color : rgba(30, 143, 255, 0.5);
+}
+
+i.fa-plus-square:hover{
+	color : rgba(30, 143, 255, 0.8);
+}
+
+i.fa-plus-square:active{
+	color : rgba(30, 143, 255, 1);
+}
+
+i.fa-window-close{
+    color : rgba(255, 0, 0, 0.5);
+}
+
+i.fa-window-close:hover{
+    color : rgba(255, 0, 0, 0.8);
+}
+
+i.fa-window-close:active{
+    color : rgba(255, 0, 0, 1);
+}
+
+button.enterToShop{
+    margin : 0;
+	background-color : rgba(236, 64, 122,.9);
+	color : black;
+	border : none;
+	font-family : nazanin;
+	font-size : 20px;
+	outline : none;
+	cursor : pointer;
+	height: 95%;
+}
+
+button.enterToShop:hover{
+	background-color : black;
+	color : white;
+}
+
+div.priceDescription{
+	display : flex ;
+	flex-direction : row;
+	justify-content : flex-end;
+	padding-bottom : 13px;
+}
+div.priceDescription * {
+	padding-left : 7px;
+
+}
+
+
+div.showEmptyBasket{
+	display : flex;
+	width : 60vw;
+	height : 40vh;
+	background-color : rgba(0,0,0,.5);
+	border-radius : 20px;
+	color : white;
+}
+
+div.showEmptyBasket div{
+	margin : auto;
+	font-family : nazanin;
+	font-size : 30px;
+	font-weight : 400;
+}
+
+div.showEmptyListBaskets{
+	display : flex;
+	width : 60vw;
+	height : 40vh;
+	background-color : rgba(0,0,0,.5);
+	border-radius : 20px;
+	color : white;
+}
+
+div.showEmptyListBaskets div {
+	margin : auto;
+	font-family : nazanin;
+	font-size : 30px;
+	font-weight : 400;
+}
+
+
+div.showEmptySearchResults{
+	display : flex;
+	width : 80vw;
+	height : 40vh;
+	background-color : rgba(0,0,0,.5);
+	border-radius : 20px;
+	color : white;
+}
+
+div.showEmptySearchResults div{
+	margin : auto;
+	font-family : nazanin;
+	font-size : 30px;
+	font-weight : 400;
+}
+
+
+
+div.containerTitleWrapper{
+	width : 90%;
+	display : flex;
+	flex-direction : row-reverse;
+}
+
+div.containerTitle{
+	justify-content: flex-start;
+	align-self : flex-end;
+	font-family : nazanin;
+	font-size : 3em;
+	border-bottom : 10px solid black;
+	margin-bottom : 30px;
+	text-align : right;
+}
+
+div.sizeBox{
+	width : 90vw;
+	height : 35vh;
+}
+
+div.title{
+	position : relative;
+	text-align : center;
+}
+
+div.title h1{
+	font-family : nazanin;
+	color : black;
+}
+
+div.modal-body h1{
+	color : black;
+	font-family : nazanin;
+}
+
+div.phoneNumber {
+    font-family : digit;
+    position : relative;
+    z-index : 3;
+    text-align : center;
+}
+
+
+@media only screen and (max-width: 900px) {
+
+    div.content {
+        margin-left : 0.5em;
+    }
+
+    div.content div.card {
+        margin-left : 0;
+    }
+
+    div.sidenav ul li {
+        min-width: 100px;
+    }
+
+	textarea{
+		width : 80vw;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	
+	button.enterToShop{
+        font-size : 18px;
+	}
+	.logo {
+        font-size : 14px;
+	}
+	
+	textarea{
+		width : 80vw;
+	}
+	
+	div.showEmptyBasket{
+		width : 80vw;
+		height : 20vh;
+	}
+	
+	div.showEmptyBasket div{
+		font-size : 20px;
+	}
+	
+	div.showEmptyListBaskets{
+		width : 80vw;
+		height : 20vh;
+	}
+
+	div.showEmptyListBaskets div {
+		font-size : 20px;
+	}
+	
+	div.containerTitleWrapper{
+	    font-size : .5em;
+	}
+}
+
+@media only screen and (max-width: 400px) {
+	textarea{
+		width : 80vw;
+	}
+
+	div.icons i {
+		width : 25px;
+	}
+	
+	div.containerTitleWrapper{
+	    font-size : .5em;
+	}
+}

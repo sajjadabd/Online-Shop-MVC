@@ -1,0 +1,103 @@
+
+.tooltipNearSearchbar {
+  position: relative;
+  font-size : 2em;
+  display: inline-block;
+}
+
+/* Tooltip text */
+.tooltipNearSearchbar span.tooltiptext {
+  visibility: hidden;
+  width: 50px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-size : 10px;
+  font-family : digit;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%; 
+  margin-left: -25px; /* Use half of the width (50/2 = 25), to center the tooltip */
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltipNearSearchbar:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltipNearSearchbar .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+
+/* 
+------------------- */
+
+.tooltip {
+  position: relative;
+  font-size : 4em;
+  display: inline-block;
+}
+
+.tooltip span.basketNotificationButton{
+    font-size : .5em;
+}
+
+.tooltip span.userConfigurationRemain{
+    font-size : .5em;
+}
+
+/* Tooltip text */
+.tooltip span.tooltiptext {
+  visibility: hidden;
+  width: 50px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  font-family : nazanin;
+  font-size : 10px;
+  /* Position the tooltip text - see examples below! */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+  left: 50%; 
+  margin-left: -25px; /* Use half of the width (50/2 = 25), to center the tooltip */
+}
+
+/* Show the tooltip text when you mouse over the tooltip container */
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+
+
+@media only screen and (max-width: 480px) {
+	.tooltip{
+    font-size : 1.5em;
+  }
+}
+

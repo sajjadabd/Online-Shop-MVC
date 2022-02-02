@@ -1,0 +1,190 @@
+/*This Modal Is used When You Click To See Categories And Make The Background Blured*/
+.modalForSideNav {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(255,255,255); /* Fallback color */
+    background-color: rgba(255,255,255,0.7); /* Black w/ opacity */
+}
+
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 20; /* Sit on top */
+    /*padding-top: 100px; // Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    position: relative;
+    top : 100px;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:100px; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:100px; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header {
+    padding: 2px 16px;
+    height : 40px;
+    background-color: rgba(236, 64, 122,.9);
+    color: black;
+    text-align : right;
+  }
+  
+  .modal-body {
+      padding: 2px 16px;
+      text-align : right;
+      font-family : nazanin;
+      font-weight : bold;
+      font-size : 20px;
+    }
+  
+  .modal-footer {
+    padding: 10px 16px;
+    color: white;
+    text-align : right;
+  }
+  
+  
+/* The Modal (background) */
+.modal-delete-item {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    /*padding-top: 100px; // Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+  }
+  
+  /* Modal Content */
+  .modal-content-delete-item {
+    position: relative;
+    top : 100px;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 40%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+  }
+  
+  /* Add Animation */
+  @-webkit-keyframes animatetop {
+    from {top:-300px; opacity:0} 
+    to {top:100px; opacity:1}
+  }
+  
+  @keyframes animatetop {
+    from {top:-300px; opacity:0}
+    to {top:100px; opacity:1}
+  }
+  
+  /* The Close Button */
+  .close-delete-item {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close-delete-item:hover,
+  .close-delete-item:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .modal-header-delete-item {
+    padding: 2px 16px;
+    height : 40px;
+    background-color: rgba(255, 0, 0,.9);
+    color: black;
+    text-align : right;
+  }
+  
+  .modal-body-delete-item{
+      padding: 2px 16px;
+      text-align : right;
+      font-family : nazanin;
+      font-weight : bold;
+      font-size : 20px;
+    }
+	
+.modal-footer-delete-item button#deleteItemButton{
+	font-size : 20px;
+	font-family : nazanin;
+	font-weight : bold;
+}
+  
+  .modal-footer-delete-item {
+    padding: 10px 16px;
+    color: white;
+    text-align : right;
+  }
+  
+  
+@media only screen and (max-width: 800px) {
+	.modal-content {
+		width : 80%;
+	}
+
+	.modal-content-delete-item {
+		width : 80%;
+	}
+}

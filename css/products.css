@@ -1,0 +1,171 @@
+div.BackToHome a {
+    position : fixed ;
+    z-index : 10;
+    bottom : 10px;
+    right : 25px;
+    font-size : 4em;
+    cursor : pointer;
+    color : rgb(255, 5, 172);
+}
+
+div.BackToHome a:hover {
+    color : rgb(90, 1, 60);
+}
+
+div#product_result{
+    display : flex;
+    flex-direction : column;
+    width : 100%;
+    justify-content : center;
+    align-items : center;
+    
+}
+
+
+
+div.container_Pictures{
+    display : flex;
+}
+
+
+
+div.content{
+    margin : 0;
+    width : 100%;
+}
+
+
+div.product_Card{
+    display : flex;
+    box-sizing : border-box;
+    position : relative;
+    flex-direction: column;
+    width : 50%;
+    justify-content: flex-start;
+    align-items : flex-end;
+    font-family : nazanin;
+    font-size : 30px;
+    background-color : white;
+    padding : 20px 40px;
+    border-radius : 20px;
+}
+
+div.product_Container{
+    display : flex;
+    width : 100%;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items : flex-end;
+}
+
+div.brand{
+    display : flex;
+    width : 100%;
+    flex-direction : row-reverse;
+    justify-content : space-between;
+}
+
+div.BuyButtonContainer{
+    width : 100%;
+    display : flex;
+    justify-content: flex-start;
+    margin-top : 20px;
+}
+
+button.buy{
+    padding : 5px 20px;
+    margin-left : 20px;
+    font-family : nazanin;
+}
+
+button.buy i{
+    padding-right : 10px;
+}
+
+button.buy span.notificationNumber {
+    font-family : 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color : black;
+    background-color: greenyellow;
+    padding : 5px;
+    border-radius: 15%;
+    position : absolute;
+    left : -10px;
+    top : -20px;
+}
+
+div.countererContainer{
+    display : flex;
+    flex-direction : row;
+    justify-content : space-between;
+    width : 20%;
+}
+
+div.countererContainer div{
+    flex : 1;
+    font-size : 20px;
+    text-align : center;
+}
+
+button.counterer {
+    font-size : 20px;
+}
+
+div.sizeBox{
+    width : 100vw;
+    height: 20vh;
+}
+
+
+div.description{
+    display : flex;
+    flex-direction: row;
+    text-align : right;
+}
+
+div.color{
+    display : flex;
+    width : 100%;
+    flex-direction : row-reverse;
+}
+
+div.color div{
+    margin-left : 10px;
+}
+
+div.color div.colorDiv{
+    flex : 1;
+    height : 30px;
+    width : 50%;
+}
+
+@media only screen and (max-width: 900px) {
+    
+    
+    div.product_Card{
+        width : 70%;
+    }
+}
+
+
+@media only screen and (max-width: 700px) {
+    
+    div.countererContainer{
+        width : 30%;
+    }
+    
+    div.product_Card{
+        width : 90%;
+        font-size : 20px;
+    }
+}
+
+
+
+@media only screen and (max-width: 480px) {
+
+    div.BackToHome a{
+        right : 30px;
+        font-size : 2em;
+    }
+    
+}

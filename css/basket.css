@@ -1,0 +1,309 @@
+
+div.card_Basket{
+    display : flex;
+    flex-direction : row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    width : 350px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    margin-top : 10px;
+    position : relative;
+    background-color : white;
+    margin-right : 10px;
+}
+
+div.card_Basket:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    transition: 0.3s;
+}
+
+
+div.card_Basket div.container_Basket {
+    display : flex;
+    flex-direction : column;
+    width : 50%;
+    align-self: flex-start;
+    font-family : nazanin;
+	font-size : 18px;
+    font-weight : 100;
+    align-items : flex-end;
+    padding-right : 10px;
+    position: relative;
+    right : 0;
+}
+
+div.card_Basket div.container_images{
+    position : absolute;
+    width : 50%;
+    height : 100%;
+    left : 0;
+}
+
+
+div.card_Basket_Delete{
+    font-size : 30px;
+    font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    cursor: pointer;
+}
+
+div.basketTitle{
+    display : flex;
+    width : 80vw;
+    padding : 20px;
+    background-color: rgba(128, 128, 128, 0.4);
+    font-family : digit;
+    font-weight : bold;
+    font-size : 20px;
+}
+
+div.basketListTitle{
+	display : flex;
+    width : 80vw;
+    padding : 20px;
+	background-color: rgba(128, 128, 128, 0.4);
+    font-family : digit;
+    font-weight : bold;
+    font-size : 20px;
+	justify-content : flex-end;
+}
+
+div.allTheThingsInBasket{
+	display : flex;
+	flex-direction : column;
+    width : 80vw;
+    padding : 20px;
+	background-color: rgba(128, 128, 128, 0.4);
+    justify-content : flex-end;
+    font-family : digit;
+    font-weight : bold;
+    font-size : 16px;
+}
+
+
+
+div.completeListBasketContainer{
+	display : flex;
+	flex-direction : column;
+	margin-top : 20px;
+}
+
+div.showBasketStatus{
+	display : flex;
+	flex-direction : row-reverse;
+	justify-content : flex-start;
+    align-self: flex-end;
+    width : 50%;
+    font-family : digit;
+}
+
+
+
+div.showBasketStatus div{
+	text-align : right;
+	/*flex-basis : 25%;*/
+}
+
+div.basketTitle div{
+    flex : 1;
+    text-align: right;
+    font-size : 20px;
+    font-weight: bold;
+}
+
+
+
+div.basketDescription{
+    display : flex;
+    width : 80vw;
+    padding : 20px;
+    background-color: rgba(128, 128, 128, 0.4);
+}
+
+@media print{
+    div.print{
+        font-family : digit;
+    }
+
+    div.allTheThingsInBasket div.eachProductInBasket {
+        font-family : digit;
+        font-size : 14px;
+    }
+}
+
+div.operations{
+    display : flex;
+    flex-direction: row-reverse;
+    width : 80vw;
+    padding : 20px;
+    background-color: rgba(128, 128, 128, 0.4);
+    font-family : digit;
+    font-size : 20px;
+    font-weight: bold;
+    justify-content : center;
+}
+
+div.operations div.statusColor{
+    display : flex;
+    flex-direction : row-reverse;
+    align-items : center;
+    border-radius : 20px;
+}
+
+div.operations > div{
+    margin : 20px;
+}
+
+div.operations *{
+    flex : 1;
+    text-align : center;
+}
+
+
+div.operations button{
+    font-family : nazanin;
+    margin : 20px;
+    font-size : 20px;
+    background-color : rgb(60, 179, 113 , .8);
+    cursor : pointer;
+    border : none;
+    outline : none;
+    border-radius : 20px;
+}
+
+@media only screen and (max-width: 800px) {
+
+    div.operations div.statusColor{
+        flex-direction : column;
+    }
+
+    div.operations{
+        flex-direction: column;
+    }
+
+}
+
+div.basketDescription div{
+    flex : 1;
+    text-align : right;
+    font-family : digit;
+    font-size : 16px;
+    font-weight: bold;
+}
+
+div#listOfBaskets {
+	margin-bottom : 100px;
+}
+
+div.eachProductInBasket{
+	display : flex;
+	flex-direction : column;
+    width : 80vw;
+    border-bottom : 2px dashed black;
+    font-family : digit;
+}
+
+div.priceDescription > div.price{
+    font-family : digit;
+}
+
+div.multiply_Basket > span{
+    font-family : digit;
+}
+
+div.price_Basket{
+    font-family : digit;
+}
+
+div.BasketMainDescription{
+	align-self : flex-start;
+	font-family : digit;
+	font-weight : bold;
+	font-size : 20px;
+}
+
+div.postPrice{
+    display: flex;
+    flex-direction: column;
+    width: 80vw;
+    padding: 20px;
+    background-color: rgba(128, 128, 128, 0.4);
+    justify-content: flex-end;
+    font-family: digit;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+
+div.postPriceList {
+    display : flex;
+    flex-direction : row-reverse;
+}
+
+div.exactPostPrice {
+    display : flex;
+    flex-direction : row;
+}
+
+div#MyBasketContent {
+    display : flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+	margin-bottom : 100px;
+}
+
+div.SubmitBasket button {
+    display : flex;
+    margin : auto;
+    margin-top : 30px;
+    font-size : 40px;
+    position : relative;
+    height : 80px;
+}
+
+div#loading2 {
+    margin-top : 30px;
+    height : 80px;
+}
+
+div.container_Basket > div.brand_Basket{
+    width : 100%;
+    font-family : logoFont;
+    display : flex;
+    flex-direction: row-reverse;
+    justify-content : space-between;
+
+}
+
+div.brand_Basket > div.showOriginal{
+    text-align:center;
+    font-family : nazanin;
+    background-color: rgba(30, 143, 255, 0.6);
+    border-radius : 20px;
+    flex-basis: 30%;
+}
+
+div.container_Basket > div.title_Basket{
+    width : 100%;
+    text-align:right;
+}
+
+div.container_Basket > div.price_Basket{
+    display : flex;
+    flex-direction: row;
+    justify-content : space-between;
+}
+
+
+@media only screen and (max-width: 700px) {
+	div.showBasketStatus div{
+        /*flex-basis : 50%;*/
+	}
+}
+
+@media only screen and (max-width: 480px) {
+    div.card_Basket{
+        width : 320px;
+        margin-right : 0px;
+    }
+}

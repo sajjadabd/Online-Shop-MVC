@@ -1,0 +1,45 @@
+
+div.sidenav
+{
+    position : fixed;
+	z-index : 20;
+    right : -180px;
+    margin : 0;
+    top : 0;
+	width: 180px;
+    transition : 1s;
+}
+
+div.sidenav ul
+{
+    list-style-type: none;
+    margin : 0;
+    padding : 0;
+}
+
+div.sidenav ul li
+{
+    display: block;
+    margin : 0;
+    padding : 0;
+}
+
+div.sidenav ul li a
+{
+    text-decoration: none;
+    cursor: pointer;
+    color : black;
+    display : block;
+    padding : 15px 20px;
+    background-color: rgba(236, 64, 121, .6);
+    font-family: roya;
+    font-weight : 800;
+    border-bottom : 1px solid rgba(236, 64, 121, 1);
+}
+
+div.sidenav ul li a:hover
+{
+    background-color: rgba(236, 64, 121, 1);
+    color : white;
+    transition-duration: .3s;
+}

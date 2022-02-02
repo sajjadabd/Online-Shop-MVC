@@ -1,0 +1,45 @@
+html,body{
+    margin : 0;
+    padding : 0;
+}
+
+div.container{
+    display : flex;
+    width : 100vw;
+    height : 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+div.text{
+    margin : auto;
+    color : white;
+    font-size : 2em;
+    font-family : 'Courier New', Courier, monospace;
+    font-weight : bold;
+}
+
+div.text::after{
+    content : ".";
+    background-color: rgb(255, 255, 0,1);
+    animation: .5s infinite op;
+}
+
+
+@keyframes op {
+    0%{
+        background-color: rgb(255, 255, 0,1);
+    }
+    50%{
+        background-color: rgb(255, 255, 0,.1);
+    }
+    100%{
+        background-color: rgb(255, 255, 0,1);
+    }
+}
+
+
+@media only screen and (max-width : 700px) {
+    div.text{
+        font-size : 1em;
+    }
+}

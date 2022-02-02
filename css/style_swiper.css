@@ -1,0 +1,19 @@
+
+.swiper-container {
+    position : relative;
+    width: 50%; /* dont write max-width or you will fucked up */
+    height: 180px;
+}
+
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    transition: 1s;
+}
+
+div.swiper-container:hover div.swiper-slide:nth-child(1){
+    margin-left : -170px;
+    transition: 1s;
+}
+  

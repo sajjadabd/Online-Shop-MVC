@@ -1,0 +1,361 @@
+div.card {
+    display : flex;
+    position : relative;
+    box-sizing: border-box;
+    flex-direction : row wrap;
+    justify-content: flex-end;
+    align-items: center;
+    width : 350px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.5);
+    margin : 10px;
+	margin-bottom : 20px;
+    z-index : 1;
+    background-color : white;
+}
+
+div.card:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.6);
+    transition: 0.3s;
+}
+
+div.container_images {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+}
+
+/*
+div.card img {
+    width : 50%;
+    align-self: flex-start;
+}
+*/
+
+div.card div.container {
+    display : flex;
+    position : relative;
+    width: 50%;
+    height: 100%;
+    right: 0;
+    flex-direction : column;
+    justify-content: space-between;
+	align-items : space-between;
+    padding-right : 10px;
+    font-weight: 400;
+    text-align : right;
+    font-family : digit;
+}
+
+div.container{
+    align-self: stretch;
+    position : relative;
+}
+
+div.card h2{
+    cursor : pointer;
+    font-size : 23px;
+    align-self: flex-end;
+    width : 70%;
+}
+
+div.card h2::before{
+    content: '';
+	position: absolute;
+	top: 20px;
+	right: -70%;
+	width: 70%;
+	height: 10%;
+	opacity: 0.2;
+	transform: scale3d(0,1,1);
+	transform-origin: 0% 50%;
+	transition: transform 0.5s;
+    transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+    background : linear-gradient(90deg, rgba(255,0,235,.7) 0%, rgba(255,0,235,.7) 64%, rgba(255,255,255,.7) 100%);
+    /*background-color: rgb(138, 0, 46);*/
+}
+
+
+div.card:hover h2::before{
+	transform: scale3d(-1,1,1);
+}
+
+div.card a.productTitle{
+    cursor : pointer;
+    font-size : 23px;
+    align-self: flex-end;
+    width : 70%;
+    font-weight : 600;
+}
+
+div.card a.productTitle::before{
+    content: '';
+	position: absolute;
+	top: 20px;
+	right: -70%;
+	width: 70%;
+	height: 10%;
+	opacity: 0.2;
+	transform: scale3d(0,1,1);
+	transform-origin: 0% 50%;
+	transition: transform 0.5s;
+    transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+    background : linear-gradient(90deg, rgba(255,0,235,.7) 0%, rgba(255,0,235,.7) 64%, rgba(255,255,255,.7) 100%);
+    /*background-color: rgb(138, 0, 46);*/
+}
+
+
+div.card:hover a.productTitle::before{
+	transform: scale3d(-1,1,1);
+}
+
+div.container div.color{
+    display : flex;
+    flex-direction : row-reverse;
+}
+
+div.container div.color div{
+    margin-left : 10px;
+}
+
+div.container div.color div.colorDiv{
+    /*height : 90%; don't uncommment it!!! */
+    width : 50%;
+}
+
+
+
+/*
+div.card div.brand div:nth-child(1)::before{
+    content: '';
+	position: absolute;
+	top: 70px;
+	right: -50%;
+	width: 50%;
+	height: 10%;
+	opacity: 0.2;
+	transform: scale3d(0,1,1);
+	transform-origin: 0% 50%;
+	transition: transform 1s;
+    transition-timing-function: cubic-bezier(0.2,1,0.3,1);
+    background-color: rgb(138, 0, 46);
+}
+
+
+div.card:hover div.brand div:nth-child(1)::before{
+	transform: scale3d(-1,1,1);
+}
+*/
+
+
+div.container > div.save {
+    position : absolute;
+    left : 20px;
+    top : -2px;
+}
+
+i.fa-bookmark{
+    cursor : pointer;
+    color : rgba(0,0,0,0.9);
+}
+
+i.fa-bookmark:hover{
+    color : black;
+}
+
+
+div.container > h2 {
+	margin : 0;
+	padding : 0;
+}
+
+div.container > div{
+	font-size : 16px;
+}
+
+div.container > div.brand{
+    font-family : nazanin;
+    display : flex;
+    font-size : 18px;
+    flex-direction: row-reverse;
+    justify-content : space-between;
+}
+
+div.brand > div.showOriginal{
+    text-align:center;
+    font-family : nazanin;
+    background-color: rgba(30, 143, 255, 0.6);
+    border-radius : 20px;
+    flex-basis: 30%;
+}
+
+/*
+div.eachProductImageWrapper{
+    height : 200px;
+    width : 100%;
+    overflow : hidden;
+    border : 1px solid black;
+}
+
+div.eachProductImageContainer{
+    width : 100%;
+    border : 1px solid red;
+}
+*/
+
+button.buy {
+    box-sizing: border-box;
+    align-self: flex-end;
+    font-size : 16px;
+    background-color: rgba(236, 64, 122,.9);
+    color : black;
+	margin-bottom: 20px;
+    border : none;
+    cursor: pointer;
+    box-shadow: 0 9px #999;
+    outline :none;
+    position : relative;
+}
+
+button.buy:hover {
+    background-color: rgba(236, 64, 121, 1);
+    color : white;
+}
+
+button.buy:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+button.special {
+    box-sizing: border-box;
+    align-self: flex-end;
+    font-size : 16px;
+    margin-bottom: 20px;
+    background-color: rgba(236, 64, 122,.9);
+    color : black;
+    border : none;
+    cursor: pointer;
+    box-shadow: 0 9px #999;
+    outline :none;
+    font-family : nazanin;
+    padding : 10px 20px;
+}
+
+button.special:hover {
+    background-color: rgba(236, 64, 121, 1);
+    color : white;
+}
+
+button.special:active {
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+div.container button span {
+    font-family: nazanin;
+    font-weight : 800;
+}
+
+div.container button i {
+    padding-right : 3px;
+    padding-top : 5px;
+}
+
+
+div.container button span.notificationNumber {
+    /* font-family : 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; */
+    font-family : digit;
+    font-size : 15px;
+    color : black;
+    background-color: greenyellow;
+    padding : 2px 5px;
+    border-radius: 15%;
+    position : absolute;
+    left : -8px;
+    top : -15px;
+}
+
+
+div.BuyButtonContainer {
+	display : flex;
+	flex-direction : row-reverse;
+    justify-content : flex-start;
+    align-content: center;
+
+}
+
+div.countererContainer{
+    display : flex;
+    align-items: center;
+    margin-right : 10px;
+}
+
+button.counterer {
+	background-color : rgba(236, 64, 122,.9);
+	border : 1px solid rgba(236, 64, 122,.9);
+	cursor : pointer;
+	padding : 1px 5px;
+	color : black;
+}
+
+button.counterer:hover{
+    background-color : rgba(236, 64, 122,1);
+    color : white;
+}
+
+button.counterer.minusminus {
+	padding : 1px 7px;
+}
+
+
+
+div.counterText {
+	display : inline-block;
+	text-align : center;
+	box-sizing : border-box;
+    font-family : verdana;
+    font-size : 14px;
+    width : 20px;
+}
+
+div.stockContainer{
+	position : absolute;
+	z-index : -10;
+	display : none;
+	height : 22px;
+	flex-direction : row-reverse;
+	background-color : Tomato;
+	color : white;
+	border-radius: 5px;
+	padding : 0 5px;
+	top : -22px;
+	right : 0px;
+}
+
+div.card:hover div.stockContainer{
+	display : flex;
+}
+
+
+@media only screen and (max-width: 480px) {
+    div.card{
+        min-width : 320px;
+        margin : 0;
+        margin-bottom : 30px;
+    }
+    
+    div.card h2{
+        font-size : 20px;
+    }
+    
+
+    div.container button span{
+       font-weight : 300;   
+    }
+    
+    button.buy{
+        font-size : 14px;
+    }
+
+}

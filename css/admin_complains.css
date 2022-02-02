@@ -1,0 +1,35 @@
+div.eachComplain{
+    margin : 1em;
+    border : 1px solid black;
+    display : flex;
+    flex-direction: column;
+    font-family : digit;
+}
+
+div.row{
+    display : flex;
+    flex-direction: column;
+    margin : 1em;
+    align-items: flex-end;
+}
+
+div.complain_title{
+    display : flex;
+    flex-direction: row-reverse;
+}
+
+div.phone{
+    display : flex;
+    flex-direction: row-reverse;
+}
+
+
+div.complain_text{
+    display : flex;
+    flex-direction: row-reverse;
+}
+
+
+
+
+

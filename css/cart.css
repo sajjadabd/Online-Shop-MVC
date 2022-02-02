@@ -1,0 +1,83 @@
+div.postInfo{
+    position : relative;
+    display : flex;
+    flex-direction: row;
+    justify-content : center;
+    font-family : digit;
+    text-align : center;
+    margin-bottom: 10px;
+    margin-top : 30px;
+    font-size : 20px;
+    width : 100%;
+}
+
+div.postInfo table{
+    width : 80vw;
+    margin : auto;
+}
+
+
+div.postInfo th,td{
+    border : 1px solid gray;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+div.postInfo table tr{
+    display : flex;
+    flex-direction: row-reverse;
+}
+
+div.postInfo table tr th,td{
+    flex : 2;
+}
+
+div.postInfo table tr th:nth-child(2),td:nth-child(2){
+    flex : 1;
+}
+
+div.tellTheTruePrice{
+    display : flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+}
+
+div.tellTheTruePrice div{
+    margin : 0 10px;
+}
+
+@media only screen and (max-width:700px){
+    div.postInfo {
+        font-size : 16px;
+    }
+
+    th{
+        font-weight: 100;
+    }
+}
+
+div.loadingContainer{
+    display : block;
+}
+
+@media only screen and (max-width:480px){
+    div.postInfo {
+        font-size : 14px;
+    }
+    
+    div.loadingContainer{
+        display : block;
+    }
+}
+
+@media only screen and (max-width:450px){
+    div.postInfo {
+        font-size : 12px;
+    }
+    
+    div.loadingContainer{
+        display : block;
+    }
+}

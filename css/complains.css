@@ -1,0 +1,36 @@
+.containerTitleWrapper{
+    position : relative;
+    margin : 40px auto;
+    z-index : 5;
+}
+
+.userSettingForm{
+	margin-left : 20px;
+    position : relative;
+    z-index : 5;
+}
+
+.userSettingForm > div{
+	display : flex;
+	align-items : flex-start;
+	flex-direction : row;
+}
+
+.userSettingForm > div > div{
+	padding : 0;
+}
+
+div.title{
+	font-family : nazanin;
+}
+
+
+
+
+
+@media only screen and (max-width: 800px) {
+    
+	.userSettingForm > div > textarea{
+		max-width : 90vw;
+	}
+}

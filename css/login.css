@@ -1,0 +1,222 @@
+body
+{
+    padding : 0;
+    margin : 0;
+    width : 100%;
+    height : 100vh;
+    background: url('images/fancy_deboss.png') repeat top left;
+    overflow-x : hidden;
+}
+
+/*
+div.background img
+{
+    position : absolute;
+    top : 0;
+    left : 0;
+    width : 100%;
+    height : auto;
+    z-index : -2;
+    opacity: .5;
+}
+*/
+
+svg.head{
+	position : absolute;
+	top : -20px;
+	width: 100vw;
+    transform : rotateX(180deg);
+    z-index : -10;
+}
+
+
+svg.editorial {
+	position: relative;
+	display: block;
+	width: 100%;
+	height:100%;
+	margin:0;
+  }
+
+
+
+
+
+
+div.header
+{
+    width : 100%;
+    height : 50px;
+    background-color: rgba(236, 64, 122,1.0);
+}
+
+div.form-container
+{
+    display : flex;
+}
+
+form
+{
+    display : flex;
+    flex-direction: column;
+    width : 100vw;
+    height : 50vh;
+    margin : auto;
+    align-content: center;
+    justify-content: center;
+    align-self: center;
+}
+
+form div
+{
+    margin : auto;
+}
+
+form div.buttons
+{
+    display : flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+
+div.logo
+{  
+    align-content: center;
+    font-family : logoFont;
+    /*text-shadow: -2px 0 white, 0 2px white, 2px 0 white, 0 -2px white;*/
+}
+
+
+form input[type=text]
+{
+    width : 30vw;
+    height : 20px;
+    font-size : 18px;
+    padding : 20px;
+    margin : auto;
+    border : 1px solid black;
+    outline : none;
+    font-family: inputFont;
+    text-align : right;
+    border-radius : 10px;
+    background-color: white;
+    font-weight: 800;
+}
+
+form button
+{
+    width : 20vw;
+    height : 50px;
+    padding : 10px;
+    margin : auto;
+    font-size : 20px;
+    border-radius : 10px;
+    background-color: rgba(236, 64, 122,.9);
+    border : none;
+    box-shadow: 0 9px #999;
+    cursor : pointer;
+    font-family: roya;
+    font-weight: 800;
+    outline : none;
+    flex-basis: 90%;
+}
+
+div.buttons{
+    position : relative;
+    display : flex;
+}
+
+div button#prev{
+    flex-basis: 10%;
+    margin-right : 10px;
+    font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    /*position : relative;
+    left : -80px;
+    width : 50px;*/
+}
+
+
+form button:hover
+{
+    background-color: rgba(236, 64, 122,1);
+    color : white;
+}
+
+form button:active
+{
+    box-shadow: 0 5px #666;
+    transform: translateY(4px);
+}
+
+
+div.desc
+{
+    margin-top : 50px;
+    margin-bottom : 50px;
+    display: flex;
+}
+
+div.desc div
+{
+    width : 84%;
+    margin : auto;
+    text-align:center;
+    font-size : 30px;
+    font-family: nazanin;
+}
+
+div.footer
+{
+	position : relative;
+	bottom : 0;
+    width : 100%;
+}
+
+div.lawAccept{
+    font-family : digit;
+    width : 75%;
+    text-align : center;
+}
+
+div.lawAccept a{
+    text-decoration: underline;
+}
+
+div.lawAccept a:hover{
+    color: Tomato;
+}
+
+
+@media only screen and (max-width: 1000px) {
+    div.logo {
+        font-size : 1em;
+    }
+    div.background
+      {
+        display : none;
+    }
+    div.desc div
+      {
+        font-size : 23px;
+    }
+    form input[type=text]
+      {
+        width : 50vw;
+        font-size : 14px;
+    }
+    form button#nex
+      {
+        width : 40vw;
+        font-size : 18px;
+    }
+    form button#submit
+      {
+          width : 40vw;
+        font-size : 18px;
+    }
+	div.loadingContainer
+	{
+		font-size : 14px;
+	}
+}

@@ -1,0 +1,40 @@
+div.adminContent{
+	display : flex;
+	flex-direction : column;
+}
+
+
+div.container{	
+	display : flex;
+	flex-direction : row;
+	justify-content : space-between;
+	margin-bottom : 50px;
+}
+
+div.row{
+	display : flex;
+	flex-direction : column;
+}
+
+
+
+div.row *{
+	margin-bottom : 20px;
+}
+
+
+input {
+	border : 2px solid rgba(90, 156, 223, 0.6);
+}
+
+input:focus {
+	border : 2px solid dodgerblue;
+}
+
+select {
+	border : 2px solid rgba(90, 156, 223, 0.6);
+}
+
+select:focus {
+	border : 2px solid dodgerblue;
+}

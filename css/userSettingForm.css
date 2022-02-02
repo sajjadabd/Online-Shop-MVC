@@ -1,0 +1,194 @@
+div.userSettingForm *{
+	box-sizing : border-box;
+}
+
+div.fontFarsi {
+	font-family : nazanin;
+	font-weight : bold;
+	font-size : 20px;
+	padding-left:40px;
+}
+
+div.userSettingForm {
+	display : flex;
+	width : 90%;
+	flex-direction : column;
+	font-family : nazanin;
+	font-size : 20px;
+	margin-bottom : 100px;
+	position : relative;
+}
+
+div.userSettingForm > div {
+	flex : 1;
+	display : flex;
+	width : 100%;
+	margin-bottom : 10px;
+}
+
+div.userSettingForm > div > div {
+	flex-basis : 23%;
+}
+
+div.userSettingForm input {
+	flex-basis : 30%;
+	font-family : digit;
+	font-size : 20px;
+	padding : 15px;
+	
+	box-shadow: 2px 2px 2px rgba(68,68,68,0.6);
+}
+
+div.userSettingForm div.thisIsSelect {
+	position : relative;
+	flex-basis : 30%;
+	font-family : digit;
+	font-size : 20px;
+	padding : 5px;
+	border : 1px solid rgba(0, 0, 0, 0.5);
+	background-color : white;
+	height : 45px;
+
+	box-shadow: 2px 2px 2px rgba(68,68,68,0.6);
+}
+
+div.thisIsSelect div#user_selected_province,div.thisIsSelect div#user_selected_city{
+	position: relative;
+	cursor : pointer;
+	padding-left : 10px;
+}
+
+div.thisIsSelect div#user_selected_province::after,
+div.thisIsSelect div#user_selected_city::after{
+	content: "^";
+	position : absolute;
+	font-family : 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+	transform : rotate(180deg);
+	top : 0;
+	right : 0;
+}
+
+
+div.userSettingForm input:focus {
+	box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.4);
+}
+
+div.userSettingForm textarea {
+	font-family : digit;
+	font-size : 20px;
+	padding : 15px;
+	flex-basis : 60%;
+	
+	box-shadow: 2px 2px 2px rgba(68,68,68,0.6);
+}
+
+div.userSettingForm textarea:focus {
+	box-shadow: 0px 0px 10px 4px rgba(0,0,0,0.4);
+}
+
+div.userSettingForm button {
+	font-family : nazanin;
+	font-size : 20px;
+	padding : 15px;
+	flex-basis : 30%;
+}
+
+span.loadingbar{
+	margin-left : 10%;
+	margin-bottom : 35px;
+}
+
+
+div#selectListOfProvinces, div#selectListOfCities{
+	position : absolute;
+	top : 50%;
+	left : 50%;
+	transform : translate(-50%,-50%);
+	width : 40vw;
+	height : 80vh;
+	background-color : white;
+
+	-webkit-box-shadow: 0px 7px 31px 10px rgba(0,0,0,0.75);
+	-moz-box-shadow: 0px 7px 31px 10px rgba(0,0,0,0.75);
+	box-shadow: 0px 7px 31px 10px rgba(0,0,0,0.75);
+
+	z-index : 500;
+	overflow-y : scroll;
+}
+
+div#selectListOfProvinces::-webkit-scrollbar,div#selectListOfCities::-webkit-scrollbar {
+    width: 10px;
+}
+
+div#selectListOfProvinces::-webkit-scrollbar-track, div#selectListOfCities::-webkit-scrollbar-track{
+    background: #f1f1f1; 
+}
+
+div#selectListOfProvinces::-webkit-scrollbar-thumb, div#selectListOfCities::-webkit-scrollbar-thumb{
+    background: #888; 
+}
+
+div#selectListOfProvinces::-webkit-scrollbar-thumb:hover, div#selectListOfCities::-webkit-scrollbar-thumb:hover{
+    background: #555;  
+}
+
+div#maskForSelect{
+	position : absolute;
+	top : 0;
+	left : 0;
+	width : 100%;
+	height : 125%;
+	z-index : 400;
+	background-color : 	rgb(220,220,220,.6);
+}
+
+div.eachName {
+	font-family : nazanin;
+	padding : 20px;
+	border-bottom : 1px solid gray;
+	width : 80%;
+	margin : auto;
+	cursor : pointer;
+}
+
+div.eachName:hover {
+	font-weight : 700;
+}
+
+div.loadingContainer {
+	display : inline-block;
+	padding : 15px;
+	height : 90px;
+}
+
+@media only screen and (max-width: 700px) {
+
+	div.userSettingForm {
+		display : block;
+	}
+
+	div.userSettingForm > div {
+		display : block;
+	}
+	
+	input,div.thisIsSelect{
+		width : 60%;
+	}
+
+	div#selectListOfProvinces, div#selectListOfCities{
+		width : 70vw;
+	}
+	
+	textarea{
+	    width : 90%;
+	}
+	
+	div.fontFarsi {
+		padding-left : 0;
+	}
+
+	div.loadingContainer {
+		display : inline-block;
+	}
+
+}

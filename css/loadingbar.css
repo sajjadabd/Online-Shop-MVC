@@ -1,0 +1,62 @@
+
+div.loadingContainer
+{
+	font-size : 20px;
+    font-family : Tahoma;
+    height : 50px;
+    box-sizing: border-box;
+}
+
+div.loading
+{
+    display : flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+div.bar{
+    width : 4px;
+    height : 50px;
+    background-color: rgb(251, 6, 231);
+    display : inline-block;
+    margin-right : 4px;
+    padding : 0;
+    animation: loadingBar 1s infinite;
+}
+
+div.bar:nth-child(1){
+    animation-delay: .3s;
+}
+div.bar:nth-child(2){
+    animation-delay: .2s;
+}
+div.bar:nth-child(3){
+    animation-delay: .3s;
+}
+div.bar:nth-child(4){
+    animation-delay: .1s;
+}
+div.bar:nth-child(5){
+    animation-delay: .3s;
+}
+div.bar:nth-child(6){
+    animation-delay: .2s;
+}
+div.bar:nth-child(7){
+    animation-delay: .3s;
+}
+div.bar:nth-child(8){
+    animation-delay: .2s;
+}
+
+@keyframes loadingBar{
+    0%{
+        transform : scaleY(0);
+    }
+    50%{
+        transform : scaleY(1);
+    }
+    100%{
+        transform : scaleY(0);
+    }
+}

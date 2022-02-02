@@ -1,0 +1,7 @@
+[16-Aug-2019 21:36:01 Asia/Tehran] PHP Parse error:  syntax error, unexpected '$phone' (T_VARIABLE) in /home/nekabeau/public_html/php/adminLogin/setAdminSession.php on line 8
+[16-Aug-2019 21:36:03 Asia/Tehran] PHP Parse error:  syntax error, unexpected '$phone' (T_VARIABLE) in /home/nekabeau/public_html/php/adminLogin/setAdminSession.php on line 8
+[16-Aug-2019 21:36:05 Asia/Tehran] PHP Parse error:  syntax error, unexpected '$phone' (T_VARIABLE) in /home/nekabeau/public_html/php/adminLogin/setAdminSession.php on line 8
+[19-Sep-2019 17:17:20 Asia/Tehran] PHP Fatal error:  Call to undefined function send_sms() in /home/nekabeau/public_html/php/adminLogin/checkAdminLogin.php on line 37
+[19-Sep-2019 17:17:49 Asia/Tehran] PHP Fatal error:  Call to undefined function send_sms() in /home/nekabeau/public_html/php/adminLogin/checkAdminLogin.php on line 37
+[23-Sep-2019 22:59:55 Asia/Tehran] PHP Warning:  mysqli_query() expects parameter 1 to be mysqli, null given in /home/nekabeau/public_html/php/adminLogin/admin_checkBlocked.php on line 8
+[23-Sep-2019 22:59:55 Asia/Tehran] PHP Warning:  mysqli_num_rows() expects parameter 1 to be mysqli_result, null given in /home/nekabeau/public_html/php/adminLogin/admin_checkBlocked.php on line 13

@@ -1,0 +1,97 @@
+body {
+    margin : 0;
+	padding : 0;
+	overflow-x : hidden;
+}
+
+div.content {
+    margin : 0;
+    width : 100%;
+}
+
+div.header {
+    width : 100%;
+	position : relative;
+	top : 0;
+    height : 50px;
+    background-color: rgba(236, 64, 122,1.0);
+	z-index : 3;
+	top : 0;
+}
+
+div.footer{
+	position: relative;
+	margin : 0;
+	padding : 0;
+	width : 100%;
+}
+
+div.footer svg{
+	margin : 0;
+	padding : 0;
+}
+
+div.fontFarsi{
+	font-family : nazanin;
+}
+
+
+div#savedList{
+	display : flex;
+	flex-wrap: wrap;
+	flex-direction: row;
+	justify-content : center;
+	align-items : center;
+	width : 100%;
+	/*
+	justify-content: center;
+	width : 90vw;*/
+}
+
+div.topSizeBox{
+	width : 80vw;
+	height : 10vh;
+}
+
+
+
+div.showEmptySavedBaskets{
+	display : flex;
+	width : 60vw;
+	height : 40vh;
+	background-color : rgba(0,0,0,.5);
+	border-radius : 20px;
+	color : white;
+}
+
+div.showEmptySavedBaskets div{
+	margin : auto;
+	font-family : nazanin;
+	font-size : 30px;
+	font-weight : 400;
+}
+
+
+@media only screen and (max-width: 700px) {
+	
+
+	div.showEmptySavedBaskets{
+		width : 80vw;
+		height : 30vh;
+	}
+
+	
+    div.showEmptySavedBaskets div{
+    	font-size : 18px;
+    	font-weight : 200;
+    }
+    
+    
+}
+
+
+@media only screen and (max-width: 480px) {
+    div.containerTitleWrapper{
+        font-size : .5em;
+    }
+}

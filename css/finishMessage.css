@@ -1,0 +1,17 @@
+div.finishMessage{
+    position: relative;
+    margin-top : 50px;
+    width : 80vw;
+    height : 20px;
+    display : flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ccc;
+}
+
+div.finishMessage div{
+    text-align :center;
+    font-family : nazanin;
+    font-size : 20px;
+    color : black;
+}
